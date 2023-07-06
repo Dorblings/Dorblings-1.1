@@ -5,13 +5,13 @@ Function InitializePrivate(maxSupply Uint64, decimals Uint64, collection String,
 4 STORE("timestamp", BLOCK_TIMESTAMP())
 5 SEND_ASSET_TO_ADDRESS(SIGNER(), maxSupply, SCID())
 6 STORE("collection", Snacks)
-7 STORE("maxSupply", 110,000)
+7 STORE("maxSupply", 110000)
 8 STORE("totalSupply", maxSupply)
 9 STORE("decimals", 3)
 10 STORE("metadataFormat", json)
 11 STORE("metadata", "The utility token in Dorblings DERO Frenship Club NFA collection")
-12 STORE("frozenCollection", 0)
-13 STORE("frozenMetadata", 0)
+12 STORE("frozenCollection", no)
+13 STORE("frozenMetadata", no)
 14 RETURN 0
 15 RETURN 1
 End Function
